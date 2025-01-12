@@ -13,7 +13,9 @@
 - 이동평균 (Moving Average)
 - 지수평활 (Exponential Smoothing)
 - 특정 기간 사이 표준편차 / 변동계수
-- lag
+- lagging
+- rolling
+- 차분
 
 #### 날씨
 - 기온, 강수량, 습도, 바람
