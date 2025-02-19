@@ -1,0 +1,7 @@
+notebooks/
+data/raw/
+
+# Python 컴파일된 파일들 제외
+__pycache__/
+*.pyc
+*.pyo
