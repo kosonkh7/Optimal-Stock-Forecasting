@@ -47,6 +47,9 @@ test url: localhost:8001/docs <br>
 - 날짜 특성: 택배 물동량은 특히 주말, 공휴일 여부에 크게 영향 받음 (연, 월, 요일, 주말, 공휴일, 명절 데이터) <br>
 
 ## Modeling
+![image](https://github.com/user-attachments/assets/743c6fdb-b201-4f52-adc0-f3a5a8091013)
+
+LSTM:
   
 
 ## 안전재고 계산식
