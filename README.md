@@ -1,7 +1,7 @@
 # Optimal-Stock-Forecasting
 MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리
 
-# REST API developed using FastAPI
+## REST API developed using FastAPI
 **Endpoint:** <br>
 `GET /stock_predictions`
 
