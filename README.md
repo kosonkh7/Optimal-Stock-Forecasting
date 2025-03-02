@@ -1,6 +1,7 @@
 # Optimal-Stock-Forecasting
 MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 예측
 
+# REST API developed using FastAPI
 **Endpoint:** <br>
 `GET /stock_predictions`
 
@@ -19,19 +20,24 @@ MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정
         &emsp;"precaution_comment": precaution_comment <br>
 } <br>
 
-## Easy usage with Docker Image
+# Easy usage with Docker Image
 **docker run -p 8001:8001 kosonkh7/team4_stock_prediction:v0.0.0** (or latest) <br>
-test url: localhost:8001/docs
+test url: localhost:8001/docs <br>
+
+# Description
+
+![image](https://github.com/user-attachments/assets/66e3ded8-553f-43cb-96e3-862c1958c4c2)
 
 
+## Data Description
+서울 열린 데이터 광장 [CJ 대한통운 택배 물동량 데이터.](https://data.seoul.go.kr/dataVisual/seoul/SeoulConsumerLogistics.do) <br>
 
+18~23년 1달 단위로 집계된 데이터. 생활물류 11개 품목군에 대한 일자 별, 지역 별 물동량 정보. <br>
 
+본 데이터를 목적에 맞게 집계 및 전처리하여 아래 csv 파일 형태로 변환하여 활용. <br>
 
-
-## 1. 데이터
-- logistics_18_23.csv : ([배송일자, 자치구] 기준으로 그룹핑하여, 자치구-자치구 + 전국시도-자치구 생활물류 데이터를 총합한 데이터, 결측치 처리 完)
-- people.csv : 2023년 7월 기준 행정동 별 인구 수 데이터 (센서스 공간정보 데이터와 행정동 명 동일하게 전처리)
-
+- logistics_18_23.csv : [배송일자, 자치구] 기준으로 그룹핑하여, 자치구-자치구 + 전국시도-자치구 생활물류 데이터를 총합한 데이터, (결측치 처리 完)
+- logistics_by_center.csv : 일자 별, 물류센터 별, 주요 품목군 별로 집계한 데이터.
 
 ## 3. 택배 물동량에 영향 미칠 요인
 #### 시계열 특성
