@@ -1,5 +1,32 @@
-# Stock-Prediction (리드미 파일 수정 예정)
-물류센터 내 적정 재고 수준 산정을 위한 LSTM기반 택배 물동량 수요 예측 모델링
+# Optimal-Stock-Forecasting
+MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 예측
+
+**Endpoint:** <br>
+`GET /stock_predictions`
+
+**Request**: <br>
+{ <br>
+&emsp;"date": str (예측일자) <br>
+&emsp;"loaction": str (대상 센터) <br>
+&emsp;"category_name": str (대상 품목군) <br>
+} <br>
+
+**Response**: <br>
+{ <br>
+        &emsp;"predicted_value": predicted_value, <br>
+        &emsp;"safety_stock": safety_stock, <br>
+        &emsp;"proper_stock": proper_stock, <br>
+        &emsp;"precaution_comment": precaution_comment <br>
+} <br>
+
+## Easy usage with Docker Image
+**docker run -p 8001:8001 kosonkh7/team4_stock_prediction:v0.0.0** (or latest) <br>
+test url: localhost:8001/docs
+
+
+
+
+
 
 ## 1. 데이터
 - logistics_18_23.csv : ([배송일자, 자치구] 기준으로 그룹핑하여, 자치구-자치구 + 전국시도-자치구 생활물류 데이터를 총합한 데이터, 결측치 처리 完)
