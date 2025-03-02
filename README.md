@@ -14,10 +14,10 @@ MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정
 
 **Response**: <br>
 { <br>
-        &emsp;"predicted_value": predicted_value, <br>
-        &emsp;"safety_stock": safety_stock, <br>
-        &emsp;"proper_stock": proper_stock, <br>
-        &emsp;"precaution_comment": precaution_comment <br>
+        &emsp;"predicted_value": 예측 수요량 (LSTM 기반 예측 결과) <br>
+        &emsp;"safety_stock": 안전 재고량 (수요의 변동성과 품목군의 특성을 반영한 안전재고 계산) <br>
+        &emsp;"proper_stock": 적정 재고량 (예측수요 + 안전재고) <br>
+        &emsp;"precaution_comment": 주의 문구 (품목군 별 재고 관리 시 유의 사항 메세지) <br>
 } <br>
 
 # Easy usage with Docker Image
