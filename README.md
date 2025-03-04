@@ -49,8 +49,18 @@ test url: localhost:8001/docs <br>
 ## Modeling
 ![image](https://github.com/user-attachments/assets/743c6fdb-b201-4f52-adc0-f3a5a8091013)
 
-LSTM:
-  
+LSTM: 입력 데이터가 길어질 때 기울기 소실이 발생한 것을 보완한 모델로, 재고 관리와 같은 시계열 예측에 특화된 모델.
+
+샘플 데이터를 대상으로, 3가지 AI 기반 예측 모델(RNN, LSTM, GRU) 간의 성능 평가지표를 비교 했을 때
+
+LSTM이 3가지 평가지표(R2, RMSE, MAE)에서 모두 좋은 성능을 보였기 때문에 채택하였다.
+
+![image](https://github.com/user-attachments/assets/d8825f39-14ca-495b-ab66-a62b3bd05448)
+
+17개의 물류센터, 11개의 품목군 별로 나누어 총 187개의 독립적인 예측 모델을 학습하는 파이프라인을 개발하였고,
+
+ReduceLROnPlateau, EarlyStopping를 통해 각 모델 성능을 최적화하였다.
+
 
 ## 안전재고 계산식
 
