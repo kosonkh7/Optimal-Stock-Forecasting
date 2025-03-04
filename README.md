@@ -1,4 +1,7 @@
 # Optimal-Stock-Forecasting
+
+![image](https://github.com/user-attachments/assets/305e4e39-2faf-4896-aea2-b78f4ebd98f2)
+
 MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리
 
 ## REST API developed using FastAPI
@@ -154,3 +157,4 @@ $\[
 - 품목군 별 물동량에 직접적으로 영향을 주는 이벤트(ex. 블랙프라이데이)를 추가하거나, 각 품목군별 특성을 세분화하여 새로운 피처를 정의했다면 보다 현실을 반영한 예측 가능했을 것.
 - LSTM, GRU, RNN 총 3가지 모델의 예측 성능을 비교 평가하여 LSTM을 이용하였지만, 더 많은 시계열 예측 모델과의 비교 평가를 진행하면 좋았을 것.
 [(ex. GluonTS : 딥러닝 기반 확률적 시계열 모델 패키지)](https://ts.gluon.ai/stable/index.html)
+- Optuna와 같은 하이퍼파라미터 최적화 툴을 적용하여 최적의 모델 구조를 각각 도출해내는 파이프라인을 개발하면 좋을 것.
