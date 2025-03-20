@@ -1,10 +1,8 @@
-# Optimal-Stock-Forecasting
-
 ![image](https://github.com/user-attachments/assets/305e4e39-2faf-4896-aea2-b78f4ebd98f2)
 
-MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리
+- MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리 서비스
 
-## REST API developed using FastAPI
+# REST API developed using FastAPI
 **Endpoint:** <br>
 `GET /stock_predictions`
 
@@ -32,7 +30,7 @@ test url: localhost:8001/docs <br>
 ![image](https://github.com/user-attachments/assets/66e3ded8-553f-43cb-96e3-862c1958c4c2)
 
 
-## Data Description
+# Data Description
 서울 열린 데이터 광장 [CJ 대한통운 택배 물동량 데이터.](https://data.seoul.go.kr/dataVisual/seoul/SeoulConsumerLogistics.do) <br>
 
 18~23년 1달 단위로 집계된 데이터. 생활물류 11개 품목군에 대한 일자 별, 지역 별 물동량 정보. <br>
@@ -45,12 +43,12 @@ test url: localhost:8001/docs <br>
 - holiday.csv : 물동량에 영향 크게 미치는 명절(신정, 설날, 추석) 데이터, 그외 공휴일 데이터를 포함하여 전처리 한 데이터.\
   (holidays 라이브러리 활용)
 
-## Feature Engineering
+# Feature Engineering
 - 시계열 특성: 주변 시점의 특성을 반영하기 위함 (7일/28일 단위 구분 -> Moving_Avg, Coeff_Var, Diff, Lag, Seasonality, Residual) <br>
 - 날짜 특성: 택배 물동량은 특히 주말, 공휴일 여부에 크게 영향 받음 (연, 월, 요일, 주말, 공휴일, 명절 데이터) <br>
 
-## Modeling
-![image](https://github.com/user-attachments/assets/743c6fdb-b201-4f52-adc0-f3a5a8091013)
+# Modeling
+![image](https://github.com/user-attachments/assets/17e18d96-df70-4095-b35b-befcab904ce3)
 
 LSTM: 입력 데이터가 길어질 때 기울기 소실이 발생한 것을 보완한 모델로, 재고 관리와 같은 시계열 예측에 특화된 모델.
 
