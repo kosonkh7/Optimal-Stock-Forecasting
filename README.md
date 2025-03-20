@@ -25,6 +25,49 @@
 **docker run -p 8001:8001 kosonkh7/team4_stock_prediction:v0.0.0** (or latest) <br>
 test url: localhost:8001/docs <br>
 
+# Directory Structure
+📦재고 예측\
+ ┣ 📂data\
+ ┃ ┣ 📂raw\
+ ┃ ┃ ┣ 📜dong.csv\
+ ┃ ┃ ┣ 📜gu.csv\
+ ┃ ┃ ┗ 📜people.csv\
+ ┃ ┣ 📜holiday.csv\
+ ┃ ┗ 📜logistics_by_center.csv\
+ ┣ 📂model\
+ ┃ ┣ 📂가락시장    (예시, 총 17개의 MFC)\
+ ┃ ┃ ┣ 📜food.keras    (예시, 총 11개의 품목군)\
+ ┃ ┃ ┣ 📜food_metrics.pkl\
+ ┃ ┃ ┣ 📜food_scaler_X.pkl\
+ ┃ ┃ ┣ 📜food_scaler_y.pkl\
+ ┃ ┃ ┣ 📜sports.keras\
+ ┃ ┃ ┣ 📜sports_metrics.pkl\
+ ┃ ┃ ┣ 📜sports_scaler_X.pkl\
+ ┃ ┃ ┗ 📜sports_scaler_y.pkl\
+ ┣ 📂notebooks\
+ ┃ ┣ 📜1. Preprocessing (seoul_to_seoul).ipynb\
+ ┃ ┣ 📜2. Preprocessing (all_to_seoul).ipynb\
+ ┃ ┣ 📜3. Preprocessing (split_unit_area).ipynb\
+ ┃ ┣ 📜4. Holiday.ipynb\
+ ┃ ┗ 📜5. GlounTS Estimator.ipynb\
+ ┣ 📂routers\
+ ┃ ┗ 📜stock_prediction.py\
+ ┣ 📂training\
+ ┃ ┗ 📜auto_training_pipeline.py\
+ ┣ 📂utils\
+ ┃ ┣ 📜data_loader.py\
+ ┃ ┣ 📜feature_engineering.py\
+ ┃ ┣ 📜model_loader.py\
+ ┃ ┣ 📜precaution_comment.py\
+ ┃ ┣ 📜safety_stock.py\
+ ┃ ┣ 📜scaler.py\
+ ┃ ┗ 📜__init__.py\
+ ┣ 📜.dockerignore\
+ ┣ 📜config.py\
+ ┣ 📜Dockerfile\
+ ┣ 📜main.py\
+ ┗ 📜requirements.txt\
+
 # Description
 
 ![image](https://github.com/user-attachments/assets/66e3ded8-553f-43cb-96e3-862c1958c4c2)
