@@ -25,53 +25,54 @@
 **docker run -p 8001:8001 kosonkh7/team4_stock_prediction:v0.0.0** (or latest) <br>
 test url: localhost:8001/docs <br>
 
-# Directory Structure
-📦재고 예측\
- ┣ 📂data\
- ┃ ┣ 📂raw\
- ┃ ┃ ┣ 📜dong.csv\
- ┃ ┃ ┣ 📜gu.csv\
- ┃ ┃ ┗ 📜people.csv\
- ┃ ┣ 📜holiday.csv\
- ┃ ┗ 📜logistics_by_center.csv\
- ┣ 📂model\
- ┃ ┣ 📂가락시장    (예시, 총 17개의 MFC)\
- ┃ ┃ ┣ 📜food.keras    (예시, 총 11개의 품목군)\
- ┃ ┃ ┣ 📜food_metrics.pkl\
- ┃ ┃ ┣ 📜food_scaler_X.pkl\
- ┃ ┃ ┣ 📜food_scaler_y.pkl\
- ┃ ┃ ┣ 📜sports.keras\
- ┃ ┃ ┣ 📜sports_metrics.pkl\
- ┃ ┃ ┣ 📜sports_scaler_X.pkl\
- ┃ ┃ ┗ 📜sports_scaler_y.pkl\
- ┣ 📂notebooks\
- ┃ ┣ 📜1. Preprocessing (seoul_to_seoul).ipynb\
- ┃ ┣ 📜2. Preprocessing (all_to_seoul).ipynb\
- ┃ ┣ 📜3. Preprocessing (split_unit_area).ipynb\
- ┃ ┣ 📜4. Holiday.ipynb\
- ┃ ┗ 📜5. GlounTS Estimator.ipynb\
- ┣ 📂routers\
- ┃ ┗ 📜stock_prediction.py\
- ┣ 📂training\
- ┃ ┗ 📜auto_training_pipeline.py\
- ┣ 📂utils\
- ┃ ┣ 📜data_loader.py\
- ┃ ┣ 📜feature_engineering.py\
- ┃ ┣ 📜model_loader.py\
- ┃ ┣ 📜precaution_comment.py\
- ┃ ┣ 📜safety_stock.py\
- ┃ ┣ 📜scaler.py\
- ┃ ┗ 📜__init__.py\
- ┣ 📜.dockerignore\
- ┣ 📜config.py\
- ┣ 📜Dockerfile\
- ┣ 📜main.py\
- ┗ 📜requirements.txt\
-
 # Description
 
 ![image](https://github.com/user-attachments/assets/66e3ded8-553f-43cb-96e3-862c1958c4c2)
 
+<details>
+<summary> **Directory Structure** </summary>
+📦 경로 구조 <br>
+ ┣ 📂data <br>
+ ┃ ┣ 📂raw <br>
+ ┃ ┃ ┣ 📜dong.csv <br>
+ ┃ ┃ ┣ 📜gu.csv <br>
+ ┃ ┃ ┗ 📜people.csv <br>
+ ┃ ┣ 📜holiday.csv <br>
+ ┃ ┗ 📜logistics_by_center.csv <br>
+ ┣ 📂model <br>
+ ┃ ┣ 📂가락시장    (예시, 총 17개의 MFC) <br>
+ ┃ ┃ ┣ 📜food.keras    (예시, 총 11개의 품목군) <br>
+ ┃ ┃ ┣ 📜food_metrics.pkl <br>
+ ┃ ┃ ┣ 📜food_scaler_X.pkl <br>
+ ┃ ┃ ┣ 📜food_scaler_y.pkl <br>
+ ┃ ┃ ┣ 📜sports.keras <br>
+ ┃ ┃ ┣ 📜sports_metrics.pkl <br>
+ ┃ ┃ ┣ 📜sports_scaler_X.pkl <br>
+ ┃ ┃ ┗ 📜sports_scaler_y.pkl <br>
+ ┣ 📂notebooks <br>
+ ┃ ┣ 📜1. Preprocessing (seoul_to_seoul).ipynb <br>
+ ┃ ┣ 📜2. Preprocessing (all_to_seoul).ipynb <br>
+ ┃ ┣ 📜3. Preprocessing (split_unit_area).ipynb <br>
+ ┃ ┣ 📜4. Holiday.ipynb <br>
+ ┃ ┗ 📜5. GlounTS Estimator.ipynb <br>
+ ┣ 📂routers <br>
+ ┃ ┗ 📜stock_prediction.py <br>
+ ┣ 📂training <br>
+ ┃ ┗ 📜auto_training_pipeline.py <br>
+ ┣ 📂utils <br>
+ ┃ ┣ 📜data_loader.py <br>
+ ┃ ┣ 📜feature_engineering.py <br>
+ ┃ ┣ 📜model_loader.py <br>
+ ┃ ┣ 📜precaution_comment.py <br>
+ ┃ ┣ 📜safety_stock.py <br>
+ ┃ ┣ 📜scaler.py <br>
+ ┃ ┗ 📜__init__.py <br>
+ ┣ 📜.dockerignore <br>
+ ┣ 📜config.py <br>
+ ┣ 📜Dockerfile <br>
+ ┣ 📜main.py <br>
+ ┗ 📜requirements.txt <br>
+</details>
 
 # Data Description
 서울 열린 데이터 광장 [CJ 대한통운 택배 물동량 데이터.](https://data.seoul.go.kr/dataVisual/seoul/SeoulConsumerLogistics.do) <br>
