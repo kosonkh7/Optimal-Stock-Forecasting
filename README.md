@@ -1,8 +1,9 @@
+## 📦 MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리 서비스
 ![image](https://github.com/user-attachments/assets/305e4e39-2faf-4896-aea2-b78f4ebd98f2)
 
-- MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리 서비스
 
-# REST API developed using FastAPI
+
+# API Description
 **Endpoint:** <br>
 `GET /stock_predictions`
 
@@ -25,7 +26,7 @@
 **docker run -p 8001:8001 kosonkh7/team4_stock_prediction:v0.0.0** (or latest) <br>
 test url: localhost:8001/docs <br>
 
-# Description
+# Service Overview
 
 ![image](https://github.com/user-attachments/assets/66e3ded8-553f-43cb-96e3-862c1958c4c2)
 
