@@ -1,7 +1,14 @@
 ## 📦 MFC 내 수요의 변동성을 고려한 주요 품목군 별 LSTM 기반 적정 재고 관리 서비스
 ![image](https://github.com/user-attachments/assets/305e4e39-2faf-4896-aea2-b78f4ebd98f2)
 
-
+# 💻 Tech Stacks
+![FastAPI](https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Statsmodels](https://img.shields.io/badge/statsmodels-0C4B33?style=for-the-badge)
+![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 # API Description
 **Endpoint:** <br>
